@@ -15,7 +15,7 @@ public class main {
         points[5]=new second(5,-1) ;
         points[6]=new second(1,-3);
         points[7]=new second(-1,-1);
-        for (int j = 0; j < n; j++) {
+       for (int j = 0; j < n; j++) {
             System.out.println("Old points[" + (j+1) + "]: "+points[j].getX()+" "+points[j].getY());
         }
         System.out.println();
@@ -54,9 +54,11 @@ public class main {
         }
 
         }
+        System.out.println("Точки при которых Фигура выпуклая");
         for (int j = 0; j <n ; j++) {
             System.out.println("New points[" + (j+1) + "]: "+points[j].getX()+" "+points[j].getY());
         }
+
         /*for (int j = 0; j <n ; j++) {
             System.out.println("new vector mult: "+multiplication[j]);
         }*/
