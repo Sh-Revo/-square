@@ -4,17 +4,17 @@ public class main {
        // second second = new second(0,0);
         int n=8;
         int i;
-        second points[]=new second[n];
-        second vectors[] =new second[n];
+        Point points[]=new Point[n];
+        Point vectors[] =new Point[n];
         double multiplication[] =new double[n];
-        points[0]= new second(-2,2);
-        points[1]=new second(-1,5);
-        points[2]=new second(3,7);
-        points[3]=new second(5,4) ;
-        points[4]=new second(6,2);
-        points[5]=new second(5,-1) ;
-        points[6]=new second(1,-3);
-        points[7]=new second(-1,-1);
+        points[0]= new Point(-2,2);
+        points[1]=new Point(-1,5);
+        points[2]=new Point(3,7);
+        points[3]=new Point(5,4) ;
+        points[4]=new Point(6,2);
+        points[5]=new Point(5,-1) ;
+        points[6]=new Point(1,-3);
+        points[7]=new Point(-1,-1);
        for (int j = 0; j < n; j++) {
             System.out.println("Old points[" + (j+1) + "]: "+points[j].getX()+" "+points[j].getY());
         }
@@ -33,10 +33,10 @@ public class main {
         //    System.out.println("Vectors: ");
         for ( i = 0; i <= n-1; i++) {
             if (i==n-1){
-                vectors[i]=new second(points[i].getX()-points[i-n+1].getX(),points[i].getY()-points[i-n+1].getY());
+                vectors[i]=new Point(points[i].getX()-points[i-n+1].getX(),points[i].getY()-points[i-n+1].getY());
              //   System.out.println(vectors[i].getX()+" "+vectors[i].getY());
             } else {
-            vectors[i]=new second(points[i+1].getX()-points[i].getX(),points[i+1].getY()-points[i].getY());
+            vectors[i]=new Point(points[i+1].getX()-points[i].getX(),points[i+1].getY()-points[i].getY());
            // System.out.println(vectors[i].getX()+" "+vectors[i].getY());
             }
         }
